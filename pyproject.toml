@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hexlet-tests"
+version = "0.1.0"
+description = ""
+authors = ["Anna Smertina <smr.anya@gmail.com>"]
+readme = "README.md"
+packages = [{include = "some_program"}]
+
+[tool.poetry.scripts]
+capitalize = "some_program.scripts.main_script:main"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prompt = "^0.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
